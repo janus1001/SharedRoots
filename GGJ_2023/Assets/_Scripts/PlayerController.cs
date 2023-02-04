@@ -5,15 +5,18 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     [SerializeField] private Rigidbody _rb;
+    [SerializeField] private Animator _animator;
     [SerializeField] private float _speed = 5f;
     [SerializeField] private float _turnSpeed = 360;
 
     private Vector3 _input;
+    private bool _isMoving;
 
     private void Update()
     {
         GatherInput();
         Look();
+        Animate();
     }
 
     private void FixedUpdate()
@@ -40,5 +43,19 @@ public class PlayerController : MonoBehaviour
     private void Move()
     {
         _rb.MovePosition(transform.position + (transform.forward * _input.magnitude) * _speed * Time.deltaTime);
+    }
+
+    private void Animate()
+    {
+        if (_input.magnitude < 0.1)
+        {
+            _isMoving = false;
+        }
+        else
+        {
+            _isMoving = true;
+        }
+
+        _animator.SetBool("isMoving", _isMoving);
     }
 }

@@ -1,16 +1,55 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class UI_Manager : MonoBehaviour
 {
     public GameObject _gameOverScreen;
-    // Update is called once per frame
-    void Update()
+    public GameObject _pauseScreen;
+
+    private void Start()
     {
+        Helpers._puzzleSolved = false;
+        Helpers._piecesInPlace = 0;
+        _gameOverScreen.SetActive(false);
+        _pauseScreen.SetActive(false);
+    }
+
+    private void Update()
+    {
+        if (Helpers._piecesInPlace >= 4)
+        {
+            Helpers._puzzleSolved = true;
+        }
+
         if (Helpers._puzzleSolved)
         {
             _gameOverScreen.SetActive(true);
         }
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Pause();
+        }
+    }
+
+    public void Pause()
+    {
+        _pauseScreen.SetActive(!_pauseScreen.activeSelf);
+        if (_pauseScreen.activeInHierarchy)
+        {
+            Time.timeScale = 0f;
+        }
+        else
+        {
+            Time.timeScale = 1f;
+        }
+    }
+
+    public void MainMenuButton()
+    {
+        SceneManager.LoadScene("MainMenuScene");
+        Time.timeScale = 1f;
     }
 }
