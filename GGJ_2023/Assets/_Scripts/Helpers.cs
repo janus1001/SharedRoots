@@ -9,4 +9,6 @@ public static class Helpers
     public static Vector3 ToIso(this Vector3 input) => _isoMatrix.MultiplyPoint3x4(input);
 
     public static bool _puzzleSolved = false;
+
+    public static int _piecesInPlace = 0;
 }

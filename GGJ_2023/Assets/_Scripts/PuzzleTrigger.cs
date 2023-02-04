@@ -6,18 +6,13 @@ public class PuzzleTrigger : MonoBehaviour
 {
     [SerializeField] private AudioSource _audioSource;
 
-    private float counter = 0;
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "Player" && counter < 2)
+        if (other.gameObject.tag == "Player")
         {
             _audioSource.Play();
-            counter++;
         }
-    }
 
-    private void OnTriggerStay(Collider other)
-    {
         if (other.gameObject.tag == "PuzzlePiece")
         {
             var puzzlePiece = other.gameObject;
@@ -26,10 +21,16 @@ public class PuzzleTrigger : MonoBehaviour
             {
                 if (puzzlePiece.GetComponent<AudioSource>().clip == this._audioSource.clip)
                 {
-                    Helpers._puzzleSolved = true;
-                    puzzlePiece.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
+                    Helpers._piecesInPlace++;
+                    puzzlePiece.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeRotation;
                 }
             }
         }
+
+    }
+
+    private void OnTriggerStay(Collider other)
+    {
+        
     }
 }
