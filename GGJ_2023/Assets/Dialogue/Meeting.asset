@@ -29,4 +29,4 @@ MonoBehaviour:
   - text: Led by the old woman, Margana reaches an old stone circle.
     characterName: 
     characterImage: {fileID: 21300000, guid: b498cad09f0044a47933e7b036841863, type: 3}
-  navigateToScene: TestScene
+  navigateToScene: FirstPuzzle
