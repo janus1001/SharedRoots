@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38f3231bf485b94469e56476609291c5, type: 3}
+  m_Name: Puzzle1Intro
+  m_EditorClassIdentifier: 
+  dialogueEntries:
+  - text: These stones have ancient roots. They contain the wisdom of our ancestors.
+    characterName: 
+    characterImage: {fileID: 21300000, guid: 61045215a35635447b9cda80ed0a28c4, type: 3}
+  - text: Through them, you can connect to the wisdom of your own ancestors.
+    characterName: 
+    characterImage: {fileID: 21300000, guid: 61045215a35635447b9cda80ed0a28c4, type: 3}
+  - text: Our ancestors are all connected, for they all lived in communion with the
+      earth.
+    characterName: 
+    characterImage: {fileID: 21300000, guid: 61045215a35635447b9cda80ed0a28c4, type: 3}
+  - text: Tell the stones your problem.
+    characterName: 
+    characterImage: {fileID: 21300000, guid: 61045215a35635447b9cda80ed0a28c4, type: 3}
+  - text: I need somewhere to sleep. But I have no home.
+    characterName: 
+    characterImage: {fileID: 21300000, guid: 83a30d2d7ffe2214481923f31cd650ab, type: 3}
+  - text: To find a home, I need money. But to have money, I need work.
+    characterName: 
+    characterImage: {fileID: 21300000, guid: 83a30d2d7ffe2214481923f31cd650ab, type: 3}
+  - text: And to work, I need permission. But I cannot get permission, because I
+      am not from here.
+    characterName: 
+    characterImage: {fileID: 21300000, guid: 83a30d2d7ffe2214481923f31cd650ab, type: 3}
+  - text: And permission also costs money. But I have no money. I am so scared and
+      so alone.
+    characterName: 
+    characterImage: {fileID: 21300000, guid: 83a30d2d7ffe2214481923f31cd650ab, type: 3}
+  - text: Solve the puzzle to find a solution.
+    characterName: 
+    characterImage: {fileID: 21300000, guid: 61045215a35635447b9cda80ed0a28c4, type: 3}
+  - text: Move the stones to clear the path into the circle.
+    characterName: 
+    characterImage: {fileID: 21300000, guid: b498cad09f0044a47933e7b036841863, type: 3}
+  navigateToScene: 
