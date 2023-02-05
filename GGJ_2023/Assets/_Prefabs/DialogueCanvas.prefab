@@ -228,7 +228,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue: {fileID: 11400000, guid: e9aea8a72517dc941a8984b43569cc44, type: 2}
   dialogueText: {fileID: 5218576029797134736}
-  characterNameText: {fileID: 0}
   characterImage: {fileID: 5477870171427431140}
 --- !u!1 &5508406440544305043
 GameObject:
@@ -242,7 +241,6 @@ GameObject:
   - component: {fileID: 1755812989452972899}
   - component: {fileID: 3498384584333613522}
   - component: {fileID: 8355908856658433187}
-  - component: {fileID: 4494934079753543277}
   m_Layer: 5
   m_Name: DialogueCanvas
   m_TagString: Untagged
@@ -332,20 +330,6 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
---- !u!114 &4494934079753543277
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5508406440544305043}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d71fedcc8a30f8846a6829c6656a1f1b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _gameOverScreen: {fileID: 0}
-  _pauseScreen: {fileID: 0}
 --- !u!1 &6575971312817250444
 GameObject:
   m_ObjectHideFlags: 0

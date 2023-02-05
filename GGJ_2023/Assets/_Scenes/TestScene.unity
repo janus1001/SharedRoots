@@ -2082,9 +2082,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6773827183384034173, guid: bb342182b50840b41b4c8403552e67c4,
         type: 3}
+      propertyPath: _dialogue
+      value: 
+      objectReference: {fileID: 11400000, guid: 1182af01734bab141b2806ec4dbed9e2,
+        type: 2}
+    - target: {fileID: 6773827183384034173, guid: bb342182b50840b41b4c8403552e67c4,
+        type: 3}
       propertyPath: _particleOffset
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 6773827183384034173, guid: bb342182b50840b41b4c8403552e67c4,
+        type: 3}
+      propertyPath: _gameOverDialogue
+      value: 
+      objectReference: {fileID: 11400000, guid: e88ef42312cdc0b458aae33afb156c69,
+        type: 2}
+    - target: {fileID: 6773827183384034173, guid: bb342182b50840b41b4c8403552e67c4,
+        type: 3}
+      propertyPath: _wrongPuzzleDialogue
+      value: 
+      objectReference: {fileID: 11400000, guid: 1182af01734bab141b2806ec4dbed9e2,
+        type: 2}
     - target: {fileID: 8822439242863843572, guid: bb342182b50840b41b4c8403552e67c4,
         type: 3}
       propertyPath: m_IsTrigger
@@ -3754,6 +3772,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _gameOverScreen: {fileID: 1342180436}
   _pauseScreen: {fileID: 2050821496}
+  _endDialogue: {fileID: 11400000, guid: e88ef42312cdc0b458aae33afb156c69, type: 2}
 --- !u!1001 &1163027624
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5238,6 +5257,80 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1272273698}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1550884459
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1231357159519635554, guid: 33b639834fbed5d45b30b36299d71858,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1231357159519635557, guid: 33b639834fbed5d45b30b36299d71858,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 1231357159519635557, guid: 33b639834fbed5d45b30b36299d71858,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 365.26212
+      objectReference: {fileID: 0}
+    - target: {fileID: 1231357159519635557, guid: 33b639834fbed5d45b30b36299d71858,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 178.3593
+      objectReference: {fileID: 0}
+    - target: {fileID: 1231357159519635557, guid: 33b639834fbed5d45b30b36299d71858,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -23.290695
+      objectReference: {fileID: 0}
+    - target: {fileID: 1231357159519635557, guid: 33b639834fbed5d45b30b36299d71858,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1231357159519635557, guid: 33b639834fbed5d45b30b36299d71858,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1231357159519635557, guid: 33b639834fbed5d45b30b36299d71858,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1231357159519635557, guid: 33b639834fbed5d45b30b36299d71858,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1231357159519635557, guid: 33b639834fbed5d45b30b36299d71858,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1231357159519635557, guid: 33b639834fbed5d45b30b36299d71858,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1231357159519635557, guid: 33b639834fbed5d45b30b36299d71858,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1231357159519635559, guid: 33b639834fbed5d45b30b36299d71858,
+        type: 3}
+      propertyPath: m_Name
+      value: BlueprintManager
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 33b639834fbed5d45b30b36299d71858, type: 3}
 --- !u!1001 &1553635038
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5820,9 +5913,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6773827183384034173, guid: bb342182b50840b41b4c8403552e67c4,
         type: 3}
+      propertyPath: _dialogue
+      value: 
+      objectReference: {fileID: 11400000, guid: 1182af01734bab141b2806ec4dbed9e2,
+        type: 2}
+    - target: {fileID: 6773827183384034173, guid: bb342182b50840b41b4c8403552e67c4,
+        type: 3}
       propertyPath: _particleOffset
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 6773827183384034173, guid: bb342182b50840b41b4c8403552e67c4,
+        type: 3}
+      propertyPath: _gameOverDialogue
+      value: 
+      objectReference: {fileID: 11400000, guid: e88ef42312cdc0b458aae33afb156c69,
+        type: 2}
+    - target: {fileID: 6773827183384034173, guid: bb342182b50840b41b4c8403552e67c4,
+        type: 3}
+      propertyPath: _wrongPuzzleDialogue
+      value: 
+      objectReference: {fileID: 11400000, guid: 1182af01734bab141b2806ec4dbed9e2,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bb342182b50840b41b4c8403552e67c4, type: 3}
 --- !u!1001 &1768614608
@@ -6142,9 +6253,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6773827183384034173, guid: bb342182b50840b41b4c8403552e67c4,
         type: 3}
+      propertyPath: _dialogue
+      value: 
+      objectReference: {fileID: 11400000, guid: 1182af01734bab141b2806ec4dbed9e2,
+        type: 2}
+    - target: {fileID: 6773827183384034173, guid: bb342182b50840b41b4c8403552e67c4,
+        type: 3}
       propertyPath: _particleOffset
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 6773827183384034173, guid: bb342182b50840b41b4c8403552e67c4,
+        type: 3}
+      propertyPath: _gameOverDialogue
+      value: 
+      objectReference: {fileID: 11400000, guid: e88ef42312cdc0b458aae33afb156c69,
+        type: 2}
+    - target: {fileID: 6773827183384034173, guid: bb342182b50840b41b4c8403552e67c4,
+        type: 3}
+      propertyPath: _wrongPuzzleDialogue
+      value: 
+      objectReference: {fileID: 11400000, guid: 1182af01734bab141b2806ec4dbed9e2,
+        type: 2}
     - target: {fileID: 8822439242863843572, guid: bb342182b50840b41b4c8403552e67c4,
         type: 3}
       propertyPath: m_IsTrigger
@@ -6979,9 +7108,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6773827183384034173, guid: bb342182b50840b41b4c8403552e67c4,
         type: 3}
+      propertyPath: _dialogue
+      value: 
+      objectReference: {fileID: 11400000, guid: 1182af01734bab141b2806ec4dbed9e2,
+        type: 2}
+    - target: {fileID: 6773827183384034173, guid: bb342182b50840b41b4c8403552e67c4,
+        type: 3}
       propertyPath: _particleOffset
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 6773827183384034173, guid: bb342182b50840b41b4c8403552e67c4,
+        type: 3}
+      propertyPath: _gameOverDialogue
+      value: 
+      objectReference: {fileID: 11400000, guid: e88ef42312cdc0b458aae33afb156c69,
+        type: 2}
+    - target: {fileID: 6773827183384034173, guid: bb342182b50840b41b4c8403552e67c4,
+        type: 3}
+      propertyPath: _wrongPuzzleDialogue
+      value: 
+      objectReference: {fileID: 11400000, guid: 1182af01734bab141b2806ec4dbed9e2,
+        type: 2}
     - target: {fileID: 8822439242863843572, guid: bb342182b50840b41b4c8403552e67c4,
         type: 3}
       propertyPath: m_IsTrigger

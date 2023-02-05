@@ -7,6 +7,7 @@ public class UI_Manager : MonoBehaviour
 {
     public GameObject _gameOverScreen;
     public GameObject _pauseScreen;
+    public Dialogue _endDialogue;
 
     private void Start()
     {
@@ -18,14 +19,9 @@ public class UI_Manager : MonoBehaviour
 
     private void Update()
     {
-        if (Helpers._piecesInPlace >= 4)
+        if (Helpers._piecesInPlace >= 3)
         {
             Helpers._puzzleSolved = true;
-        }
-
-        if (Helpers._puzzleSolved)
-        {
-            _gameOverScreen.SetActive(true);
         }
 
         if (Input.GetKeyDown(KeyCode.Escape))
