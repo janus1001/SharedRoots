@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1231357159519635557}
   - component: {fileID: 1231357159519635556}
-  - component: {fileID: 1231357159519635554}
   m_Layer: 0
   m_Name: BlueprintManager
   m_TagString: Untagged
@@ -47,16 +46,3 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialoguePrefab: {fileID: 5508406440544305043, guid: ea4bf844076309a4cb4aae6ba89db99b,
     type: 3}
---- !u!114 &1231357159519635554
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1231357159519635559}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 35557754d37a92747859eb0fe5135d0b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogue: {fileID: 11400000, guid: 35ce88ccc707fae4997dd51a1b4bbbea, type: 2}

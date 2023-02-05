@@ -12,6 +12,18 @@ EditorBuildSettings:
     path: Assets/_Scenes/IntroScene.unity
     guid: 1f0bb6299b607a44d8786264c457701e
   - enabled: 1
+    path: Assets/_Scenes/GoAroundCircles.unity
+    guid: cabd981330e2b644991c6e3018cfb752
+  - enabled: 1
+    path: Assets/_Scenes/NightAlone.unity
+    guid: bea0ca653b987784faa291ee5630137b
+  - enabled: 1
+    path: Assets/_Scenes/Morning.unity
+    guid: 8571dddd1eca37f4ca13aad490427f48
+  - enabled: 1
+    path: Assets/_Scenes/FirstPuzzle.unity
+    guid: f89aa23b3214bbb4cb1c411232d70fbe
+  - enabled: 1
     path: Assets/_Scenes/TestScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
   m_configObjects: {}

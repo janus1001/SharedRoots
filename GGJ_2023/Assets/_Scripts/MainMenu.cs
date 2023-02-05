@@ -16,7 +16,7 @@ public class MainMenu : MonoBehaviour
     private IEnumerator StartGame()
     {
         yield return new WaitForSeconds(5);
-        SceneManager.LoadScene("TestScene");
+        SceneManager.LoadScene("GoAroundCircles");
     }
     public void PlayButton()
     {
