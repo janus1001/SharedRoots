@@ -5,6 +5,8 @@ using UnityEngine;
 public class PuzzleTrigger : MonoBehaviour
 {
     [SerializeField] private AudioSource _audioSource;
+    [SerializeField] private GameObject _particleEffectPrefab;
+    [SerializeField] private float _particleOffset;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -18,6 +20,7 @@ public class PuzzleTrigger : MonoBehaviour
                 {
                     Helpers._piecesInPlace++;
                     puzzlePiece.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeRotation;
+                    Destroy(Instantiate(_particleEffectPrefab, new Vector3(this.transform.position.x, this.transform.position.y - _particleOffset, this.transform.position.z), Quaternion.identity), 3);
                 }
             }
         }

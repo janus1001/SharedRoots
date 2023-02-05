@@ -61,6 +61,8 @@ public class PickupController : MonoBehaviour
             _heldObject = pickedObject;
             _heldObject.transform.position = _holdArea.position;
             _heldObject.GetComponent<MeshCollider>().enabled = false;
+
+            _heldObject.GetComponent<AudioSource>().Play();
         }
     }
 

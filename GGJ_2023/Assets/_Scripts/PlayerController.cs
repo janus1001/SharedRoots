@@ -6,6 +6,7 @@ public class PlayerController : MonoBehaviour
 {
     [SerializeField] private Rigidbody _rb;
     [SerializeField] private Animator _animator;
+    [SerializeField] private AudioSource _audioSource;
     [SerializeField] private float _speed = 5f;
     [SerializeField] private float _turnSpeed = 360;
 
@@ -50,10 +51,12 @@ public class PlayerController : MonoBehaviour
         if (_input.magnitude < 0.1)
         {
             _isMoving = false;
+            _audioSource.mute = true;
         }
         else
         {
             _isMoving = true;
+            _audioSource.mute = false; 
         }
 
         _animator.SetBool("isMoving", _isMoving);
