@@ -8,11 +8,6 @@ public class PuzzleTrigger : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "Player")
-        {
-            _audioSource.Play();
-        }
-
         if (other.gameObject.tag == "PuzzlePiece")
         {
             var puzzlePiece = other.gameObject;
@@ -26,11 +21,5 @@ public class PuzzleTrigger : MonoBehaviour
                 }
             }
         }
-
-    }
-
-    private void OnTriggerStay(Collider other)
-    {
-        
     }
 }

@@ -67,7 +67,7 @@ public class PickupController : MonoBehaviour
     private void DropObject()
     {
         _heldObjRB.useGravity = true;
-        _heldObjRB.drag = 10;
+        _heldObjRB.drag = 0;
         _heldObjRB.constraints = RigidbodyConstraints.None;
 
         _heldObject.GetComponent<MeshCollider>().enabled = true;    

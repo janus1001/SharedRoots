@@ -379,7 +379,7 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: 'WASD to move
 
-    Q to play sound queue
+    Q to interact with objects
 
     E to pickup objects
 
