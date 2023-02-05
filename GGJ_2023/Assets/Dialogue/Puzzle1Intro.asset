@@ -43,7 +43,7 @@ MonoBehaviour:
   - text: Solve the puzzle to find a solution.
     characterName: 
     characterImage: {fileID: 21300000, guid: 61045215a35635447b9cda80ed0a28c4, type: 3}
-  - text: Move the stones to clear the path into the circle.
+  - text: Move the stones to clear the path for the golden rock.
     characterName: 
     characterImage: {fileID: 21300000, guid: b498cad09f0044a47933e7b036841863, type: 3}
   navigateToScene: 
