@@ -27,4 +27,4 @@ MonoBehaviour:
       train you in their methods.
     characterName: 
     characterImage: {fileID: 21300000, guid: 61045215a35635447b9cda80ed0a28c4, type: 3}
-  navigateToScene: 
+  navigateToScene: MainMenu
