@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38f3231bf485b94469e56476609291c5, type: 3}
+  m_Name: StonesIntro
+  m_EditorClassIdentifier: 
+  dialogueEntries:
+  - text: The Rollright stones stand in the centre of England, and at the threshold
+      of four shires.
+    characterName: Old Woman
+    characterImage: {fileID: 21300000, guid: b498cad09f0044a47933e7b036841863, type: 3}
+  - text: 'For more than six thousand years, humans have come to these stones.  '
+    characterName: Old Woman
+    characterImage: {fileID: 21300000, guid: b498cad09f0044a47933e7b036841863, type: 3}
+  - text: To commune with the earth, to seek the guidance of ancestors - to connect
+      with their roots.
+    characterName: Old Woman
+    characterImage: {fileID: 21300000, guid: b498cad09f0044a47933e7b036841863, type: 3}
+  - text: 'There are many stories - of a witch, who turned the king''s men to stone,
+      and of knights silently plotting a murder:'
+    characterName: Old Woman
+    characterImage: {fileID: 21300000, guid: b498cad09f0044a47933e7b036841863, type: 3}
+  - text: Stories that replaced stories, being replaced by other stories.
+    characterName: Old Woman
+    characterImage: {fileID: 21300000, guid: b498cad09f0044a47933e7b036841863, type: 3}
+  - text: Some nights, it is said, these stones return to life and speak their ancient
+      wisdom.
+    characterName: Old Woman
+    characterImage: {fileID: 21300000, guid: b498cad09f0044a47933e7b036841863, type: 3}
+  - text: To those that have the humility to ask.
+    characterName: Old Woman
+    characterImage: {fileID: 21300000, guid: b498cad09f0044a47933e7b036841863, type: 3}
+  navigateToScene: 
