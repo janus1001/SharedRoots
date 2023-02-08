@@ -43,7 +43,7 @@ public class PlayerController : MonoBehaviour
 
     private void Move()
     {
-        _rb.MovePosition(transform.position + (transform.forward * _input.magnitude) * _speed * Time.deltaTime);
+        _rb.velocity = _input.ToIso() * _speed * Time.deltaTime;
     }
 
     private void Animate()
