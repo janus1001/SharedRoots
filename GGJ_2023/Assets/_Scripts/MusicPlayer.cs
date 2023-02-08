@@ -6,10 +6,16 @@ using UnityEngine.SceneManagement;
 public class MusicPlayer : MonoBehaviour
 {
     public string destroyInScene;
-    
+    public static MusicPlayer instance;
 
     private void Awake()
     {
+        if (instance != null)
+        {
+            Destroy(instance.gameObject);
+            instance = this;
+        }
+
         DontDestroyOnLoad(this.gameObject);
     }
 
