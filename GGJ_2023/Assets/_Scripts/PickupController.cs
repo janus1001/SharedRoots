@@ -33,19 +33,6 @@ public class PickupController : MonoBehaviour
         {
             MoveObject();
         }
-
-        if (Input.GetKeyDown(KeyCode.Q))
-        {
-            if (_heldObject == null)
-            {
-                RaycastHit hit;
-                if (Physics.Raycast(_raycastStartingPoint.transform.position, transform.TransformDirection(Vector3.forward), out hit, _pickupRange))
-                {
-                    InteractWithObject(hit.transform.gameObject);
-                }
-            }
-        }
-
     }
 
     private void PickUpObject(GameObject pickedObject)
@@ -84,13 +71,4 @@ public class PickupController : MonoBehaviour
             Vector3 moveDirection = (_holdArea.position - _heldObject.transform.position);
         }   
     }
-
-    private void InteractWithObject(GameObject toBeInteracted)
-    {
-       if (toBeInteracted.GetComponent<Rigidbody>() != null)
-       {
-            toBeInteracted.GetComponent<AudioSource>().Play();
-       }
-    }
-
 }

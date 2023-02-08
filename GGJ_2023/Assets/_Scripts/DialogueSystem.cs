@@ -18,7 +18,7 @@ public class DialogueSystem : MonoBehaviour
     public static GameObject dialoguePanelPrefab;
     private void Update()
     {
-        if (Input.anyKeyDown)
+        if (Input.GetKeyDown(KeyCode.Space))
         {
             if (isTyping)
                 cancelTyping = true;
