@@ -25,6 +25,10 @@ public class DialogueSystem : MonoBehaviour
             else
                 DisplayNextEntry();
         }
+        if(Input.GetKeyDown(KeyCode.Backspace)) 
+        {
+            DisplayPreviousEntry();
+        }
     }
     public static void CreateDialogue(Dialogue newDialogue)
     {
@@ -49,6 +53,21 @@ public class DialogueSystem : MonoBehaviour
 
             return;
         }
+
+        Dialogue.Entry entry = dialogue.dialogueEntries[currentEntry];
+        characterImage.sprite = entry.characterImage;
+
+        StartCoroutine(TypeText(entry.text));
+    }
+    private void DisplayPreviousEntry()
+    {
+        if (currentEntry <= 1 || isTyping)
+            return;
+
+        StopAllCoroutines();
+
+        currentEntry -= 2;
+        
 
         Dialogue.Entry entry = dialogue.dialogueEntries[currentEntry];
         characterImage.sprite = entry.characterImage;
