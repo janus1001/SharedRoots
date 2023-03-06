@@ -18,7 +18,7 @@ public class PickupController : MonoBehaviour
             if (_heldObject == null )
             {
                 RaycastHit hit;
-                if (Physics.Raycast(_raycastStartingPoint.transform.position, transform.TransformDirection(Vector3.forward), out hit, _pickupRange))
+                if (Physics.Raycast(_raycastStartingPoint.transform.position + Vector3.up * 0.4f, transform.TransformDirection(Vector3.forward), out hit, _pickupRange))
                 {
                     if(hit.collider.CompareTag("PuzzlePiece"))
                         PickUpObject(hit.transform.gameObject);
