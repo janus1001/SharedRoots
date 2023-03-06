@@ -3,7 +3,7 @@ using UnityEngine;
 public class LazerScript : MonoBehaviour
 {
     [SerializeField] private LayerMask laserLayer;
-    [SerializeField] private float maxDistance = 5f;
+    [SerializeField] private float maxDistance = 20f;
     [SerializeField] private LineRenderer lineRenderer;
 
     private Transform targetObject;
@@ -14,13 +14,12 @@ public class LazerScript : MonoBehaviour
 
     private void Update()
     {
-        timeSinceLastPower += Time.deltaTime;
-        if (timeSinceLastPower < 0.5f || alwaysOn)
+        if (timeSinceLastPower < 0.1f || alwaysOn)
         {
             lineRenderer.enabled = true;
 
             // Sphere cast to find the target object
-            RaycastHit[] hits = Physics.SphereCastAll(transform.position + transform.forward * 3f, 2f, DirToVec(), maxDistance, laserLayer);
+            RaycastHit[] hits = Physics.SphereCastAll(transform.position + DirToVec() * 3f, 2f, DirToVec(), maxDistance, laserLayer);
             if (hits.Length > 0)
             {
                 foreach (var hit in hits)
@@ -54,6 +53,10 @@ public class LazerScript : MonoBehaviour
             lineRenderer.enabled = false;
             return;
         }
+    }
+    public void LateUpdate()
+    {
+        timeSinceLastPower += Time.deltaTime;
     }
 
     Vector3 DirToVec()

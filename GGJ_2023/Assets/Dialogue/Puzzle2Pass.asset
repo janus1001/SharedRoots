@@ -13,18 +13,18 @@ MonoBehaviour:
   m_Name: Puzzle2Pass
   m_EditorClassIdentifier: 
   dialogueEntries:
-  - text: When there are too many voices in your head, listen to the whisper of your
+  - text: When there are many voices in your head, listen to the whisper of your
       heart.
     characterName: 
     characterImage: {fileID: 21300000, guid: 61045215a35635447b9cda80ed0a28c4, type: 3}
-  - text: What is it you would like to do?
+  - text: So, the question is what do you <i>want</i> to do?
     characterName: 
     characterImage: {fileID: 21300000, guid: 61045215a35635447b9cda80ed0a28c4, type: 3}
-  - text: 'I would like to teach people how to find their path in life. '
+  - text: 'I suppose that I would like to help people find their path in life... '
     characterName: 
     characterImage: {fileID: 21300000, guid: 83a30d2d7ffe2214481923f31cd650ab, type: 3}
   - text: There is a pathfinders centre nearby. If you can help out there, they will
       train you in their methods.
     characterName: 
     characterImage: {fileID: 21300000, guid: 61045215a35635447b9cda80ed0a28c4, type: 3}
-  navigateToScene: MainMenuScene
+  navigateToScene: ThirdPuzzle

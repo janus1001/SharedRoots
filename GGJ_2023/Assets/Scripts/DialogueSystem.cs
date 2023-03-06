@@ -32,6 +32,11 @@ public class DialogueSystem : MonoBehaviour
     }
     public static void CreateDialogue(Dialogue newDialogue)
     {
+        GameObject previousDialogue = GameObject.Find("DialogueCanvas(Clone)");
+        if(previousDialogue)
+        {
+            Destroy(previousDialogue);
+        }
         GameObject go = Instantiate(Blueprints.instance.dialoguePrefab);
         go.GetComponentInChildren<DialogueSystem>().QueueDialogue(newDialogue);
     }
