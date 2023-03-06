@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Puzzle3Pass
   m_EditorClassIdentifier: 
   dialogueEntries:
-  - text: <Third puzzle text>
+  - text: <Third puzzle finish text>
     characterName: 
     characterImage: {fileID: 21300000, guid: 33e104ffb9168144ba9ff901fd2e54ae, type: 3}
-  navigateToScene: 
+  navigateToScene: MainMenuScene
