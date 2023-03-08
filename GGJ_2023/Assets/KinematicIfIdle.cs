@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class KinematicIfIdle : MonoBehaviour
 {
+    private const float timeUntilKinematic = 0.5f;
     Rigidbody rb;
     float timer;
 
@@ -18,7 +19,7 @@ public class KinematicIfIdle : MonoBehaviour
         {
             timer += Time.fixedDeltaTime;
 
-            if(timer > 0.5f)
+            if(timer > timeUntilKinematic)
             {
                 rb.isKinematic = true;
             }

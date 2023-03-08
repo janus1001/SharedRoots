@@ -16,10 +16,12 @@ public class EndLevelTrigger : MonoBehaviour
 
     }
     public Dialogue aaa;
+    bool triggered = false;
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Finish"))
+        if (other.CompareTag("Finish") && !triggered)
         {
+            triggered = true;
             DialogueSystem.CreateDialogue(aaa);
         }
     }

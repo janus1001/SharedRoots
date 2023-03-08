@@ -16,11 +16,11 @@ public class SkyboxBlendController : MonoBehaviour
     {
         Instance = this;
 
-        targetBlend = currentBlend = RenderSettings.skybox.GetFloat("_CubemapTransition");
+        //targetBlend = currentBlend = RenderSettings.skybox.GetFloat("_CubemapTransition");
 
         if(setBlendTo != -1)
         {
-            SetBlendColor(setBlendTo);
+            //SetBlendColor(setBlendTo);
         }
     }
 
