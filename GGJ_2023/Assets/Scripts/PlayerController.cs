@@ -15,7 +15,14 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
-        GatherInput();
+        if (!GameObject.Find("DialogueCanvas(Clone)"))
+        {
+            GatherInput();
+        }
+        else
+        {
+            _input = Vector3.zero;
+        }
         Look();
         Animate();
     }
