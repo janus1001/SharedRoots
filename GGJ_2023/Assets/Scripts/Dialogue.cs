@@ -9,6 +9,7 @@ public class Dialogue : ScriptableObject
         public string text;
         public string characterName;
         public Sprite characterImage;
+        public bool narrator;
     }
 
     public Entry[] dialogueEntries;

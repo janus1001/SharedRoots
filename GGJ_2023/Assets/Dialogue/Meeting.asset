@@ -16,17 +16,22 @@ MonoBehaviour:
   - text: In the morning...
     characterName: 
     characterImage: {fileID: 21300000, guid: b498cad09f0044a47933e7b036841863, type: 3}
+    narrator: 1
   - text: Hello, what are you doing in this forest?
     characterName: 
     characterImage: {fileID: 21300000, guid: 61045215a35635447b9cda80ed0a28c4, type: 3}
+    narrator: 0
   - text: I am new here. I have travelled far. I have no home and no money, so I
       had to sleep in the forest.
     characterName: 
     characterImage: {fileID: 21300000, guid: 83a30d2d7ffe2214481923f31cd650ab, type: 3}
+    narrator: 0
   - text: I see. Come with me.
     characterName: 
     characterImage: {fileID: 21300000, guid: 61045215a35635447b9cda80ed0a28c4, type: 3}
+    narrator: 0
   - text: Led by the old woman, Margana reaches an old stone circle.
     characterName: 
     characterImage: {fileID: 21300000, guid: b498cad09f0044a47933e7b036841863, type: 3}
+    narrator: 1
   navigateToScene: FirstPuzzle

@@ -8,12 +8,16 @@ public class DialogueSystem : MonoBehaviour
 {
     public Dialogue dialogue;
     public TMP_Text dialogueText;
+    public Image dialoguePanel;
     public Image characterImage;
 
     private int currentEntry = 0;
     private string currentText = "";
     private bool isTyping = false;
     private bool cancelTyping = false;
+
+    public Color normalColor;
+    public Color narratorColor;
 
     public static GameObject dialoguePanelPrefab;
     private void Update()
@@ -61,6 +65,15 @@ public class DialogueSystem : MonoBehaviour
 
         Dialogue.Entry entry = dialogue.dialogueEntries[currentEntry];
         characterImage.sprite = entry.characterImage;
+
+        if(entry.narrator)
+        {
+            dialoguePanel.color = narratorColor;
+        }
+        else
+        {
+            dialoguePanel.color = normalColor;
+        }
 
         StartCoroutine(TypeText(entry.text));
     }

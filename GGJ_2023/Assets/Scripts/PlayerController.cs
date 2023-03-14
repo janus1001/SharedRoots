@@ -55,6 +55,7 @@ public class PlayerController : MonoBehaviour
 
     private void Animate()
     {
+        Debug.Log(_input + " " + _input.magnitude);
         if (_input.magnitude < 0.1)
         {
             _isMoving = false;

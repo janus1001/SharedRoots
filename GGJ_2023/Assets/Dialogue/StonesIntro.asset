@@ -17,27 +17,35 @@ MonoBehaviour:
       of four shires.
     characterName: Old Woman
     characterImage: {fileID: 21300000, guid: b498cad09f0044a47933e7b036841863, type: 3}
+    narrator: 1
   - text: 'For more than six thousand years, humans have come to these stones.  '
     characterName: Old Woman
     characterImage: {fileID: 21300000, guid: b498cad09f0044a47933e7b036841863, type: 3}
+    narrator: 1
   - text: 'To commune with the earth, to seek the guidance of ancestors... '
     characterName: Old Woman
     characterImage: {fileID: 21300000, guid: b498cad09f0044a47933e7b036841863, type: 3}
+    narrator: 1
   - text: ...to connect with their roots.
     characterName: Old Woman
     characterImage: {fileID: 21300000, guid: b498cad09f0044a47933e7b036841863, type: 3}
+    narrator: 1
   - text: "There are many stories \u2013 of a witch, who turned the king's men to
       stone, of knights silently plotting a murder \u2013 "
     characterName: Old Woman
     characterImage: {fileID: 21300000, guid: b498cad09f0044a47933e7b036841863, type: 3}
+    narrator: 1
   - text: stories that replaced stories, being replaced by other stories.
     characterName: Old Woman
     characterImage: {fileID: 21300000, guid: b498cad09f0044a47933e7b036841863, type: 3}
+    narrator: 1
   - text: Some nights, it is said, the stones return to life and speak their ancient
       wisdom...
     characterName: Old Woman
     characterImage: {fileID: 21300000, guid: b498cad09f0044a47933e7b036841863, type: 3}
+    narrator: 1
   - text: ...to those that have the humility to ask.
     characterName: Old Woman
     characterImage: {fileID: 21300000, guid: b498cad09f0044a47933e7b036841863, type: 3}
+    narrator: 1
   navigateToScene: NightAlone
