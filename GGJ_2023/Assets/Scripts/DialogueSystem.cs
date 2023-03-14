@@ -69,10 +69,14 @@ public class DialogueSystem : MonoBehaviour
         if(entry.narrator)
         {
             dialoguePanel.color = narratorColor;
+
+            dialoguePanel.rectTransform.offsetMin = new Vector2(50, 50);
         }
         else
         {
             dialoguePanel.color = normalColor;
+
+            dialoguePanel.rectTransform.offsetMin = new Vector2(175, 50);
         }
 
         StartCoroutine(TypeText(entry.text));
