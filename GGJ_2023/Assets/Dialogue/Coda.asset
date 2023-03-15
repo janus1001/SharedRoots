@@ -21,4 +21,4 @@ MonoBehaviour:
     characterName: 
     characterImage: {fileID: 21300000, guid: b498cad09f0044a47933e7b036841863, type: 3}
     narrator: 1
-  navigateToScene: 
+  navigateToScene: Credits

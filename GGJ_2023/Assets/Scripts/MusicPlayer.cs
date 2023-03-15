@@ -8,30 +8,34 @@ public class MusicPlayer : MonoBehaviour
     public string destroyInScene;
     public static MusicPlayer instance;
 
-    private void Awake()
+    public AudioSource musicSource;
+
+    void Start()
     {
         if (instance != null)
         {
-            Destroy(instance.gameObject);
-            instance = this;
+            if (instance.musicSource.clip == musicSource.clip)
+            {
+                Destroy(gameObject);
+            }
+            else
+            {
+                Destroy(instance.gameObject);
+            }
         }
+        instance = this;
 
         DontDestroyOnLoad(this.gameObject);
-    }
 
-    public AudioSource musicSource;
-
-    private void Start()
-    {
         musicSource.Play();
     }
 
     void Update()
     {
-        if (destroyInScene == SceneManager.GetActiveScene().name)
-        {
-            Destroy(gameObject);
-        }
+        //if (destroyInScene == SceneManager.GetActiveScene().name)
+        //{
+        //    Destroy(gameObject);
+        //}
     }
 
 }
