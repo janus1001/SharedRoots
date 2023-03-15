@@ -9,12 +9,13 @@ public class ThirdLevelFinish : MonoBehaviour
 
     public Dialogue endDialogue;
 
-    // Update is called once per frame
+    public AudioSource correctSound;
+
     void Update()
     {
         if (thisLazer.timeSinceLastPower < 0.01f && secondLazer.timeSinceLastPower < 0.01f)
         {
-            Debug.Log("win");
+            correctSound.Play();
             DialogueSystem.CreateDialogue(endDialogue);
             enabled = false;
         }

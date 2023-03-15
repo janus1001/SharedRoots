@@ -10,6 +10,8 @@ public class PuzzleTrigger : MonoBehaviour
     [SerializeField] private Dialogue _wrongPuzzleDialogue;
     [SerializeField] private Dialogue _gameOverDialogue;
 
+    [SerializeField] private AudioSource _correctSound;
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "PuzzlePiece")
@@ -22,6 +24,7 @@ public class PuzzleTrigger : MonoBehaviour
                 {
                     puzzlePiece.tag = "Untagged";
 
+                    _correctSound.Play();
                     Helpers._piecesInPlace++;
                     puzzlePiece.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeRotation;
                     Destroy(Instantiate(_particleEffectPrefab, new Vector3(this.transform.position.x, this.transform.position.y - _particleOffset, this.transform.position.z), Quaternion.identity), 3);
@@ -29,7 +32,6 @@ public class PuzzleTrigger : MonoBehaviour
 
                     if (Helpers._puzzleSolved)
                     {
-                        Debug.Log("Here");
                         DialogueSystem.CreateDialogue(_gameOverDialogue);
                     }
                 }

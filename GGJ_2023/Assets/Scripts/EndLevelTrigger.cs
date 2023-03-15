@@ -4,17 +4,8 @@ using UnityEngine;
 
 public class EndLevelTrigger : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
+    public AudioSource correctSound;
 
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
     public Dialogue aaa;
     bool triggered = false;
     private void OnTriggerEnter(Collider other)
@@ -23,6 +14,7 @@ public class EndLevelTrigger : MonoBehaviour
         {
             triggered = true;
             DialogueSystem.CreateDialogue(aaa);
+            correctSound.Play();
         }
     }
 }
