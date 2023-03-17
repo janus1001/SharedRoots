@@ -10,19 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 38f3231bf485b94469e56476609291c5, type: 3}
-  m_Name: Puzzle1Intro
+  m_Name: 4. p#1 intro
   m_EditorClassIdentifier: 
   dialogueEntries:
   - text: These stones have ancient roots. They contain the wisdom of our ancestors.
     characterName: 
     characterImage: {fileID: 21300000, guid: 61045215a35635447b9cda80ed0a28c4, type: 3}
     narrator: 0
-  - text: Through them, you can connect to the wisdom of your own ancestors.
+  - text: Through them, you can tune into the wisdom of your own ancestors.
     characterName: 
     characterImage: {fileID: 21300000, guid: 61045215a35635447b9cda80ed0a28c4, type: 3}
     narrator: 0
-  - text: Our ancestors are all connected, for they all lived in communion with the
-      earth.
+  - text: Our ancestors are connected, for they all lived in communion with the earth.
     characterName: 
     characterImage: {fileID: 21300000, guid: 61045215a35635447b9cda80ed0a28c4, type: 3}
     narrator: 0
@@ -34,14 +33,22 @@ MonoBehaviour:
     characterName: 
     characterImage: {fileID: 21300000, guid: 83a30d2d7ffe2214481923f31cd650ab, type: 3}
     narrator: 0
-  - text: To find a home, I need money. But to have money, I need work.
+  - text: To find a home, I need money...
+    characterName: 
+    characterImage: {fileID: 21300000, guid: 83a30d2d7ffe2214481923f31cd650ab, type: 3}
+    narrator: 0
+  - text: And to work I need a permit...
+    characterName: 
+    characterImage: {fileID: 21300000, guid: 83a30d2d7ffe2214481923f31cd650ab, type: 3}
+    narrator: 0
+  - text: I suppose my problem is that I have too many problems!
     characterName: 
     characterImage: {fileID: 21300000, guid: 83a30d2d7ffe2214481923f31cd650ab, type: 3}
     narrator: 0
   - text: Solve the puzzle to help Margana with her problem.
     characterName: 
-    characterImage: {fileID: 21300000, guid: 61045215a35635447b9cda80ed0a28c4, type: 3}
-    narrator: 0
+    characterImage: {fileID: 21300000, guid: b498cad09f0044a47933e7b036841863, type: 3}
+    narrator: 1
   - text: Clear a path to move the golden stone to the circle entrance.
     characterName: 
     characterImage: {fileID: 21300000, guid: b498cad09f0044a47933e7b036841863, type: 3}

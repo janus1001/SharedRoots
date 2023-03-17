@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 38f3231bf485b94469e56476609291c5, type: 3}
-  m_Name: Coda
+  m_Name: 11. Coda
   m_EditorClassIdentifier: 
   dialogueEntries:
   - text: Margana and the old woman walk home through the forest.
@@ -18,6 +18,10 @@ MonoBehaviour:
     characterImage: {fileID: 21300000, guid: b498cad09f0044a47933e7b036841863, type: 3}
     narrator: 1
   - text: There will be more puzzles for them - and you - to solve tomorrow.
+    characterName: 
+    characterImage: {fileID: 21300000, guid: b498cad09f0044a47933e7b036841863, type: 3}
+    narrator: 1
+  - text: END OF GAME
     characterName: 
     characterImage: {fileID: 21300000, guid: b498cad09f0044a47933e7b036841863, type: 3}
     narrator: 1

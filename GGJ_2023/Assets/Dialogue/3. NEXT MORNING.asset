@@ -10,21 +10,27 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 38f3231bf485b94469e56476609291c5, type: 3}
-  m_Name: Puzzle2Pass
+  m_Name: 3. NEXT MORNING
   m_EditorClassIdentifier: 
   dialogueEntries:
-  - text: When there are many voices in your head, listen to the whisper of your
-      heart.
+  - text: IN THE MORNING, A WOMAN APPROACHES...
+    characterName: 
+    characterImage: {fileID: 21300000, guid: b498cad09f0044a47933e7b036841863, type: 3}
+    narrator: 1
+  - text: Hello, what are you doing here?
     characterName: 
     characterImage: {fileID: 21300000, guid: 61045215a35635447b9cda80ed0a28c4, type: 3}
-  - text: So, the question is what do you <i>want</i> to do?
-    characterName: 
-    characterImage: {fileID: 21300000, guid: 61045215a35635447b9cda80ed0a28c4, type: 3}
-  - text: 'I suppose that I would like to help people find their path in life... '
+    narrator: 0
+  - text: I've no home and no money, so I had to sleep in the forest.
     characterName: 
     characterImage: {fileID: 21300000, guid: 83a30d2d7ffe2214481923f31cd650ab, type: 3}
-  - text: There is a pathfinders centre nearby. If you can help out there, they will
-      train you in their methods.
+    narrator: 0
+  - text: Hm. Follow me!
     characterName: 
     characterImage: {fileID: 21300000, guid: 61045215a35635447b9cda80ed0a28c4, type: 3}
-  navigateToScene: ThirdPuzzle
+    narrator: 0
+  - text: SHE LEADS MARGANA THROUGH THE FOREST TO AN ANCIENT STONE CIRCLE.
+    characterName: 
+    characterImage: {fileID: 21300000, guid: b498cad09f0044a47933e7b036841863, type: 3}
+    narrator: 1
+  navigateToScene: FirstPuzzle

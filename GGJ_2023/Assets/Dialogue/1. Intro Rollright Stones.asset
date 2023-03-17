@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 38f3231bf485b94469e56476609291c5, type: 3}
-  m_Name: StonesIntro
+  m_Name: 1. Intro Rollright Stones
   m_EditorClassIdentifier: 
   dialogueEntries:
   - text: The Rollright Stones stand in the centre of England, and at the threshold
@@ -22,20 +22,17 @@ MonoBehaviour:
     characterName: Old Woman
     characterImage: {fileID: 21300000, guid: b498cad09f0044a47933e7b036841863, type: 3}
     narrator: 1
-  - text: 'To commune with the earth, to seek the guidance of ancestors... '
-    characterName: Old Woman
-    characterImage: {fileID: 21300000, guid: b498cad09f0044a47933e7b036841863, type: 3}
-    narrator: 1
-  - text: ...to connect with their roots.
+  - text: 'To commune with the earth, to seek the guidance of ancestors, to connect
+      with their roots. '
     characterName: Old Woman
     characterImage: {fileID: 21300000, guid: b498cad09f0044a47933e7b036841863, type: 3}
     narrator: 1
   - text: "There are many stories \u2013 of a witch, who turned the king's men to
-      stone, of knights silently plotting a murder \u2013 "
+      stone, of knights silently plotting a murder"
     characterName: Old Woman
     characterImage: {fileID: 21300000, guid: b498cad09f0044a47933e7b036841863, type: 3}
     narrator: 1
-  - text: stories that replaced stories, being replaced by other stories.
+  - text: " \u2013 stories replacing stories, and being replaced by other stories."
     characterName: Old Woman
     characterImage: {fileID: 21300000, guid: b498cad09f0044a47933e7b036841863, type: 3}
     narrator: 1

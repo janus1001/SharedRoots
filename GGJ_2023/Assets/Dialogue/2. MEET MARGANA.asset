@@ -10,30 +10,29 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 38f3231bf485b94469e56476609291c5, type: 3}
-  m_Name: Introduction
+  m_Name: 2. MEET MARGANA
   m_EditorClassIdentifier: 
   dialogueEntries:
   - text: 'I left home because something happened. I had to escape. '
     characterName: ??
     characterImage: {fileID: 21300000, guid: 83a30d2d7ffe2214481923f31cd650ab, type: 3}
-  - text: 'My journey started as a great adventure. But I also lost touch with my
+    narrator: 0
+  - text: 'My journey started as a great adventure, but I also lost touch with my
       roots. '
     characterName: ??
     characterImage: {fileID: 21300000, guid: 83a30d2d7ffe2214481923f31cd650ab, type: 3}
-  - text: 'Since then, I have been searching. '
-    characterName: ??
-    characterImage: {fileID: 21300000, guid: 83a30d2d7ffe2214481923f31cd650ab, type: 3}
-  - text: 'My name is Margana. It means truth. That''s what I am searching for, I
-      guess. '
+    narrator: 0
+  - text: My name is Margana. It means truth. That's what I'm searching for, I guess.
     characterName: Margana
     characterImage: {fileID: 21300000, guid: 83a30d2d7ffe2214481923f31cd650ab, type: 3}
+    narrator: 0
   - text: Now, I find myself in a strange new land. The way people speak here...
+      it sounds more like music than language.
     characterName: Margana
     characterImage: {fileID: 21300000, guid: 83a30d2d7ffe2214481923f31cd650ab, type: 3}
-  - text: The language sounds more like music than anything.
+    narrator: 0
+  - text: 'I''ve nowhere to go. I shall have to sleep in this forest. '
     characterName: Margana
     characterImage: {fileID: 21300000, guid: 83a30d2d7ffe2214481923f31cd650ab, type: 3}
-  - text: I feel so scared and alone. I shall have to sleep in this forest.
-    characterName: Margana
-    characterImage: {fileID: 21300000, guid: 83a30d2d7ffe2214481923f31cd650ab, type: 3}
+    narrator: 0
   navigateToScene: Morning

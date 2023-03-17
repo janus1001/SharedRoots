@@ -10,26 +10,25 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 38f3231bf485b94469e56476609291c5, type: 3}
-  m_Name: MEET MARGANA
+  m_Name: 9. p#3 intro
   m_EditorClassIdentifier: 
   dialogueEntries:
-  - text: IN THE MORNING, AN OLD WOMAN APPROACHES...
-    characterName: 
-    characterImage: {fileID: 21300000, guid: b498cad09f0044a47933e7b036841863, type: 3}
-  - text: Hello, what are you doing here?
+  - text: Tell your problem to the stones.
     characterName: 
     characterImage: {fileID: 21300000, guid: 61045215a35635447b9cda80ed0a28c4, type: 3}
-  - text: I'm new here. I've travelled far.  I've no home and no money, so I had
-      to sleep in the forest.
+    narrator: 0
+  - text: 'I have somewhere to live and am learning my trade. But I still have no
+      money to live.... '
     characterName: 
     characterImage: {fileID: 21300000, guid: 83a30d2d7ffe2214481923f31cd650ab, type: 3}
-  - text: I know just the thing. Follow me!
+    narrator: 0
+  - text: Shine your light to illuninate the circle.
     characterName: 
     characterImage: {fileID: 21300000, guid: 61045215a35635447b9cda80ed0a28c4, type: 3}
-  - text: 'THE OLD WOMAN LEADS MARGANA THROUGH THE FOREST. '
+    narrator: 0
+  - text: Position the power source and reflector to illuminate the blue and red
+      beacons.
     characterName: 
     characterImage: {fileID: 21300000, guid: b498cad09f0044a47933e7b036841863, type: 3}
-  - text: THEY ARRIVE AT THE ENTRANCE TO AN ANCIENT STONE CIRCLE.
-    characterName: 
-    characterImage: {fileID: 21300000, guid: b498cad09f0044a47933e7b036841863, type: 3}
-  navigateToScene: FirstPuzzle
+    narrator: 1
+  navigateToScene: 

@@ -10,16 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 38f3231bf485b94469e56476609291c5, type: 3}
-  m_Name: Puzzle3Intro
+  m_Name: 7. p#2 fail
   m_EditorClassIdentifier: 
   dialogueEntries:
-  - text: Shine your light to illuninate the circle.
+  - text: Listen closely...
     characterName: 
     characterImage: {fileID: 21300000, guid: 61045215a35635447b9cda80ed0a28c4, type: 3}
-    narrator: 0
-  - text: Position the power source and reflector to illuminate the blue and red
-      beacons.
-    characterName: 
-    characterImage: {fileID: 21300000, guid: b498cad09f0044a47933e7b036841863, type: 3}
-    narrator: 1
   navigateToScene: 
