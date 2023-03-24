@@ -2103,7 +2103,7 @@ GameObject:
   - component: {fileID: 420708977}
   - component: {fileID: 420708976}
   m_Layer: 6
-  m_Name: Point Light RedGem
+  m_Name: RedGem Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3639,6 +3639,31 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2124715935}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &611336664
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 611336652}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71b88602a24ce0f498496373b755327c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  laserLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  maxDistance: 20
+  lineRenderer: {fileID: 0}
+  bAnimateLerp: 0
+  lerpProgress: 0
+  desiredDuration: 0.25
+  timeElapsed: 0
+  castDirection: 0
+  alwaysOn: 0
+  timeSinceLastPower: 0
+  focusLight: {fileID: 420708977}
 --- !u!1001 &643989847
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7199,7 +7224,7 @@ GameObject:
   - component: {fileID: 1361547050}
   - component: {fileID: 1361547049}
   m_Layer: 6
-  m_Name: Point Light BlueGem
+  m_Name: BlueGem Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

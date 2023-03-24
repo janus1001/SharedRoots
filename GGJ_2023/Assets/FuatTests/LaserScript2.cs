@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class LazerScript2 : MonoBehaviour {
+public class LaserScript2 : MonoBehaviour {
     [SerializeField] private LayerMask laserLayer;
     [SerializeField] private float maxDistance = 20f;
     [SerializeField] private LineRenderer lineRenderer;
@@ -15,6 +15,7 @@ public class LazerScript2 : MonoBehaviour {
     public CastDirection castDirection = CastDirection.Forward;
     public bool alwaysOn;
     public float timeSinceLastPower;
+    [SerializeField] Light focusLight;
 
     private void Update() {
         if (timeSinceLastPower < 0.1f || alwaysOn) {
