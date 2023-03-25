@@ -1,13 +1,7 @@
 using UnityEngine;
 using System.IO;
 public class ReadPixelsExample : MonoBehaviour {
-    // Set this reference to a GameObject that has a Renderer component,
-    // and a material that displays a texure (such as the Default material).
-    // A standard Cube or other primitive works for the purposes of this example.
-    public Renderer screenGrabRenderer;
-
-    private Texture2D destinationTexture;
-    private bool isPerformingScreenGrab = false;
+    private string userPath;
 
     //8192, 4320
     //4096, 2160
@@ -16,22 +10,38 @@ public class ReadPixelsExample : MonoBehaviour {
     int screenshot_height = 4320;
 
     void Start() {
+        userPath = System.Environment.GetFolderPath(System.Environment.SpecialFolder.Desktop);
     }
 
     void Update() {
         // When the user presses the space key, perform the screen grab operation
         if (Input.GetKeyDown(KeyCode.P)) {
-            Debug.Log("taking screenshot");
-            // isPerformingScreenGrab = true;
-            RenderTexture targetTexture = new RenderTexture(screenshot_width, screenshot_height, 24, RenderTextureFormat.ARGB32);
-            Texture2D texture = new Texture2D(screenshot_width, screenshot_height, TextureFormat.RGB24, false);
-            Camera.main.targetTexture = targetTexture;
-            Camera.main.Render();
-            RenderTexture.active = targetTexture;
-            texture.ReadPixels(new Rect(0, 0, screenshot_width, screenshot_height), 0, 0);
-            texture.Apply();
-            byte[] data = texture.EncodeToPNG();
-            File.WriteAllBytes("D:\\texture2d.png", data);
+            takeScreenshot(8192, 4320, userPath);
         }
+
+        else if (Input.GetKeyDown(KeyCode.O)) {
+            takeScreenshot(4096, 2160, userPath);
+        }
+
+        else if (Input.GetKeyDown(KeyCode.I)) {
+            takeScreenshot(2560, 1440, userPath);
+        }
+
+        else if (Input.GetKeyDown(KeyCode.U)) {
+            takeScreenshot(1920, 1080, userPath);
+        }
+    }
+
+    void takeScreenshot(int width, int height, string pathToSave) {
+        Debug.Log("taking screenshot: " + width.ToString() + " x " + height.ToString());
+        RenderTexture targetTexture = new RenderTexture(screenshot_width, screenshot_height, 24, RenderTextureFormat.ARGB32);
+        Texture2D texture = new Texture2D(screenshot_width, screenshot_height, TextureFormat.RGB24, false);
+        Camera.main.targetTexture = targetTexture;
+        Camera.main.Render();
+        RenderTexture.active = targetTexture;
+        texture.ReadPixels(new Rect(0, 0, screenshot_width, screenshot_height), 0, 0);
+        texture.Apply();
+        byte[] data = texture.EncodeToPNG();
+        File.WriteAllBytes(pathToSave, data);
     }
 }
