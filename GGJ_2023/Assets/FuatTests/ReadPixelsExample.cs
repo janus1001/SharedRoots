@@ -14,7 +14,7 @@ public class ReadPixelsExample : MonoBehaviour {
     void Start() {
         //userPath = System.Environment.GetFolderPath(System.Environment.SpecialFolder.Desktop);
         userPath = System.Environment.GetFolderPath(System.Environment.SpecialFolder.DesktopDirectory);
-        userPath += "\\" + "gamescreen_" + DateTime.Now.ToString("ddmmyy-HHmmssfff") + ".png";
+        userPath += "\\" + "gamescreen_" + DateTime.Now.ToString("DDMMYY-HHmmssfff") + ".png";
     }
 
     void Update() {
@@ -31,19 +31,19 @@ public class ReadPixelsExample : MonoBehaviour {
             takeScreenshot(4096, 2160, userPath);
         }
 
-        if (Input.GetKeyDown(KeyCode.P)) {
+        else if (Input.GetKeyDown(KeyCode.P)) {
             takeScreenshot(8192, 4320, userPath);
         }
     }
 
     void takeScreenshot(int width, int height, string pathToSave) {
         Debug.Log("taking screenshot: " + width.ToString() + " x " + height.ToString());
-        RenderTexture targetTexture = new RenderTexture(screenshot_width, screenshot_height, 24, RenderTextureFormat.ARGB32);
-        Texture2D texture = new Texture2D(screenshot_width, screenshot_height, TextureFormat.RGB24, false);
+        RenderTexture targetTexture = new RenderTexture(width, height, 24, RenderTextureFormat.ARGB32);
+        Texture2D texture = new Texture2D(width, height, TextureFormat.RGB24, false);
         Camera.main.targetTexture = targetTexture;
         Camera.main.Render();
         RenderTexture.active = targetTexture;
-        texture.ReadPixels(new Rect(0, 0, screenshot_width, screenshot_height), 0, 0);
+        texture.ReadPixels(new Rect(0, 0, width, height), 0, 0);
         texture.Apply();
         byte[] data = texture.EncodeToPNG();
         File.WriteAllBytes(pathToSave, data);
