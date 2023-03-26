@@ -36,6 +36,7 @@ public class PickupController : MonoBehaviour
         }
     }
 
+    RigidbodyConstraints previousConstraints;
     private void PickUpObject(GameObject pickedObject)
     {
         _heldObjRB = pickedObject.GetComponent<Rigidbody>();
@@ -43,6 +44,7 @@ public class PickupController : MonoBehaviour
         {
             _heldObjRB.useGravity = false;
             _heldObjRB.drag = 0;
+            previousConstraints = _heldObjRB.constraints;
             _heldObjRB.constraints = RigidbodyConstraints.FreezeAll;
 
             _heldObjRB.transform.parent = _holdArea;
@@ -60,7 +62,7 @@ public class PickupController : MonoBehaviour
     {
         _heldObjRB.useGravity = true;
         _heldObjRB.drag = 0;
-        _heldObjRB.constraints = RigidbodyConstraints.None;
+        _heldObjRB.constraints = previousConstraints;
         _heldObjRB.isKinematic = false;
 
         _heldObject.GetComponent<Collider>().enabled = true;    
