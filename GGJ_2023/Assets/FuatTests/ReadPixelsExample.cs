@@ -1,5 +1,7 @@
 using UnityEngine;
 using System.IO;
+using System;
+
 public class ReadPixelsExample : MonoBehaviour {
     private string userPath;
 
@@ -10,25 +12,27 @@ public class ReadPixelsExample : MonoBehaviour {
     int screenshot_height = 4320;
 
     void Start() {
-        userPath = System.Environment.GetFolderPath(System.Environment.SpecialFolder.Desktop);
+        //userPath = System.Environment.GetFolderPath(System.Environment.SpecialFolder.Desktop);
+        userPath = System.Environment.GetFolderPath(System.Environment.SpecialFolder.DesktopDirectory);
+        userPath += "\\" + "gamescreen_" + DateTime.Now.ToString("ddmmyy-HHmmssfff") + ".png";
     }
 
     void Update() {
         // When the user presses the space key, perform the screen grab operation
-        if (Input.GetKeyDown(KeyCode.P)) {
-            takeScreenshot(8192, 4320, userPath);
-        }
-
-        else if (Input.GetKeyDown(KeyCode.O)) {
-            takeScreenshot(4096, 2160, userPath);
+        if (Input.GetKeyDown(KeyCode.U)) {
+            takeScreenshot(1920, 1080, userPath);
         }
 
         else if (Input.GetKeyDown(KeyCode.I)) {
             takeScreenshot(2560, 1440, userPath);
         }
 
-        else if (Input.GetKeyDown(KeyCode.U)) {
-            takeScreenshot(1920, 1080, userPath);
+        else if (Input.GetKeyDown(KeyCode.O)) {
+            takeScreenshot(4096, 2160, userPath);
+        }
+
+        if (Input.GetKeyDown(KeyCode.P)) {
+            takeScreenshot(8192, 4320, userPath);
         }
     }
 
