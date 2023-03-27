@@ -6,8 +6,8 @@ TerrainLayer:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: TerrainLayer-Puzzle-1
-  m_DiffuseTexture: {fileID: 2800000, guid: ef777574ad5f71f43a019c40b5f48f96, type: 3}
+  m_Name: GroundLayer
+  m_DiffuseTexture: {fileID: 2800000, guid: b20f2fe80f5d74e4da673a8d4a564537, type: 3}
   m_NormalMapTexture: {fileID: 0}
   m_MaskMapTexture: {fileID: 0}
   m_TileSize: {x: 2, y: 2}
@@ -17,6 +17,6 @@ TerrainLayer:
   m_Smoothness: 0
   m_NormalScale: 1
   m_DiffuseRemapMin: {x: 0, y: 0, z: 0, w: 0}
-  m_DiffuseRemapMax: {x: 0.9339623, y: 0.6489827, z: 0.4273318, w: 1}
+  m_DiffuseRemapMax: {x: 0.6795458, y: 0.7924528, z: 0.048593827, w: 1}
   m_MaskMapRemapMin: {x: 0, y: 0, z: 0, w: 0}
   m_MaskMapRemapMax: {x: 1, y: 1, z: 1, w: 1}

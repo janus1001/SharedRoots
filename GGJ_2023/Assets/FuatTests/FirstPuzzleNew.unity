@@ -4242,8 +4242,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1064718115}
   - {fileID: 791437639}
-  - {fileID: 1032020874}
   - {fileID: 1376600882}
   - {fileID: 1880856387}
   - {fileID: 1248037569}
@@ -7512,7 +7512,7 @@ PrefabInstance:
     - target: {fileID: 3805318389859771188, guid: 24457fdf8e66c3c49b7599931e0fdcb2,
         type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3805318389859771188, guid: 24457fdf8e66c3c49b7599931e0fdcb2,
         type: 3}
@@ -9638,86 +9638,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1016298569}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &1032020873
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 465573416}
-    m_Modifications:
-    - target: {fileID: 81420368991513109, guid: 92793d7096664a944ac7731d71d09d3c,
-        type: 3}
-      propertyPath: m_Name
-      value: PP_Rock_Moss_Grown_11 Variant
-      objectReference: {fileID: 0}
-    - target: {fileID: 750574777018101935, guid: 92793d7096664a944ac7731d71d09d3c,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 750574777018101935, guid: 92793d7096664a944ac7731d71d09d3c,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -21.217094
-      objectReference: {fileID: 0}
-    - target: {fileID: 750574777018101935, guid: 92793d7096664a944ac7731d71d09d3c,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1.8099957
-      objectReference: {fileID: 0}
-    - target: {fileID: 750574777018101935, guid: 92793d7096664a944ac7731d71d09d3c,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 16.33126
-      objectReference: {fileID: 0}
-    - target: {fileID: 750574777018101935, guid: 92793d7096664a944ac7731d71d09d3c,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.78026456
-      objectReference: {fileID: 0}
-    - target: {fileID: 750574777018101935, guid: 92793d7096664a944ac7731d71d09d3c,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0.0000000049079585
-      objectReference: {fileID: 0}
-    - target: {fileID: 750574777018101935, guid: 92793d7096664a944ac7731d71d09d3c,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0.62544966
-      objectReference: {fileID: 0}
-    - target: {fileID: 750574777018101935, guid: 92793d7096664a944ac7731d71d09d3c,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 9.501568e-10
-      objectReference: {fileID: 0}
-    - target: {fileID: 750574777018101935, guid: 92793d7096664a944ac7731d71d09d3c,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 750574777018101935, guid: 92793d7096664a944ac7731d71d09d3c,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: -77.43
-      objectReference: {fileID: 0}
-    - target: {fileID: 750574777018101935, guid: 92793d7096664a944ac7731d71d09d3c,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1882996215555541952, guid: 92793d7096664a944ac7731d71d09d3c,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: bb55e8c76bccf2249b4af4e9a0d4e7b3, type: 2}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 92793d7096664a944ac7731d71d09d3c, type: 3}
---- !u!4 &1032020874 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 750574777018101935, guid: 92793d7096664a944ac7731d71d09d3c,
-    type: 3}
-  m_PrefabInstance: {fileID: 1032020873}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1061279727
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9909,6 +9829,86 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1061419946}
   m_Mesh: {fileID: 4300000, guid: d14ac8ebf2fabb944bc910d23bd33f8e, type: 3}
+--- !u!1001 &1064718114
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 465573416}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 7ed75b99c26237b4d844c1581c5da1b2,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7ed75b99c26237b4d844c1581c5da1b2,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -21.29814
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7ed75b99c26237b4d844c1581c5da1b2,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.8099966
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7ed75b99c26237b4d844c1581c5da1b2,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 15.9803
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7ed75b99c26237b4d844c1581c5da1b2,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.76023597
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7ed75b99c26237b4d844c1581c5da1b2,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7ed75b99c26237b4d844c1581c5da1b2,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.6496471
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7ed75b99c26237b4d844c1581c5da1b2,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7ed75b99c26237b4d844c1581c5da1b2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7ed75b99c26237b4d844c1581c5da1b2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -81.03
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7ed75b99c26237b4d844c1581c5da1b2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 7ed75b99c26237b4d844c1581c5da1b2,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: eac85e2c69a84f9478cec1c225c5affd, type: 2}
+    - target: {fileID: 919132149155446097, guid: 7ed75b99c26237b4d844c1581c5da1b2,
+        type: 3}
+      propertyPath: m_Name
+      value: PP_Rock_Moss_Grown_11
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7ed75b99c26237b4d844c1581c5da1b2, type: 3}
+--- !u!4 &1064718115 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 7ed75b99c26237b4d844c1581c5da1b2,
+    type: 3}
+  m_PrefabInstance: {fileID: 1064718114}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1078791701 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8890356699427785745, guid: d5b8de414112a004a82d0437b5f7a780,
