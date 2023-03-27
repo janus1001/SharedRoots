@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PuzzleTrigger : MonoBehaviour
 {
+    [SerializeField] public bool _puzzleTriggerSolved;
+
     [SerializeField] private AudioSource _audioSource;
     [SerializeField] private GameObject _particleEffectPrefab;
     [SerializeField] private float _particleOffset;
@@ -24,6 +26,7 @@ public class PuzzleTrigger : MonoBehaviour
                 {
                     puzzlePiece.tag = "Untagged";
 
+                    _puzzleTriggerSolved = true;
                     _correctSound.Play();
                     Helpers._piecesInPlace++;
                     puzzlePiece.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeRotation;
