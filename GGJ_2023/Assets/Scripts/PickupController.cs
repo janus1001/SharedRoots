@@ -111,12 +111,17 @@ public class PickupController : MonoBehaviour
             _heldObject.transform.rotation = transform.rotation;
 
             var source = _heldObject.GetComponent<AudioSource>();
-            if(source)
+            if (source)
             {
                 source.Play();
-                pickupSFXParticle.transform.parent = _heldObject.transform;
-                pickupSFXParticle.transform.position = _heldObject.transform.position;
-                pickupSFXParticle.Play();
+
+                // Play ParticleSystem if exists
+                if (pickupSFXParticle != null)
+                {
+                    pickupSFXParticle.transform.parent = _heldObject.transform;
+                    pickupSFXParticle.transform.position = _heldObject.transform.position;
+                    pickupSFXParticle.Play();
+                }
             }
         }
     }
@@ -128,10 +133,14 @@ public class PickupController : MonoBehaviour
         _heldObjRB.constraints = previousConstraints;
         _heldObjRB.isKinematic = false;
 
-        _heldObject.GetComponent<Collider>().enabled = true;    
+        _heldObject.GetComponent<Collider>().enabled = true;
         _heldObjRB.transform.parent = null;
         _heldObject = null;
-        pickupSFXParticle.Stop();
+
+
+        // Stop ParticleSystem if exists
+        if (pickupSFXParticle != null)
+            pickupSFXParticle.Stop();
     }
 
     private void MoveObject()
@@ -139,6 +148,6 @@ public class PickupController : MonoBehaviour
         if (Vector3.Distance(_heldObject.transform.position, _holdArea.position) > 0.1f)
         {
             Vector3 moveDirection = (_holdArea.position - _heldObject.transform.position);
-        }   
+        }
     }
 }
