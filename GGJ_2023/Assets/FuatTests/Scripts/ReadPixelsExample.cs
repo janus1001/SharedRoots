@@ -5,11 +5,10 @@ using System;
 public class ReadPixelsExample : MonoBehaviour {
     private string userPath;
 
-    //8192, 4320
-    //4096, 2160
-    //2560 , 1440
-    int screenshot_width = 8192;
-    int screenshot_height = 4320;
+    //8K: 8192, 4320
+    //4K: 4096, 2160
+    //2K: 2560 , 1440
+    //HD: 1920, 1080
 
     void Start() {
         //userPath = System.Environment.GetFolderPath(System.Environment.SpecialFolder.Desktop);
