@@ -12,6 +12,12 @@ public class PickupController : MonoBehaviour
 
     [SerializeField] MeshFilter outlineObject;
     GameObject highlightedObject;
+    [SerializeField] ParticleSystem pickupSFXParticle;
+
+    private void Start()
+    {
+        pickupSFXParticle.Stop();
+    }
 
     private void Update()
     {
@@ -106,7 +112,12 @@ public class PickupController : MonoBehaviour
 
             var source = _heldObject.GetComponent<AudioSource>();
             if(source)
+            {
                 source.Play();
+                pickupSFXParticle.transform.parent = _heldObject.transform;
+                pickupSFXParticle.transform.position = _heldObject.transform.position;
+                pickupSFXParticle.Play();
+            }
         }
     }
 
@@ -120,6 +131,7 @@ public class PickupController : MonoBehaviour
         _heldObject.GetComponent<Collider>().enabled = true;    
         _heldObjRB.transform.parent = null;
         _heldObject = null;
+        pickupSFXParticle.Stop();
     }
 
     private void MoveObject()
