@@ -6,27 +6,52 @@ public class PickupController : MonoBehaviour
 {
     [Header("PickupSettings")]
     [SerializeField] Transform _holdArea;
-    [SerializeField] Transform _raycastStartingPoint;
-    [SerializeField] private float _pickupRange = 1.5f;
     private GameObject _heldObject;
     private Rigidbody _heldObjRB;
+    [SerializeField] CapsuleCollider pickupCollider;
+
+    [SerializeField] MeshFilter outlineObject;
+    GameObject highlightedObject;
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E) || Input.GetKeyDown(KeyCode.Return))
+        bool pickedUpThisFrame = false;
+        var closestObject = FindClosestPickupableCollider();
+        if (closestObject != null && !_heldObject)
         {
-            if (_heldObject == null )
+            if (closestObject.gameObject != highlightedObject)
             {
-                RaycastHit hit;
-                if (Physics.Raycast(_raycastStartingPoint.transform.position + Vector3.up * 0.4f, transform.TransformDirection(Vector3.forward), out hit, _pickupRange))
+                outlineObject.mesh = closestObject.GetComponent<MeshFilter>().mesh;
+                highlightedObject = closestObject.gameObject;
+                outlineObject.transform.parent = highlightedObject.transform;
+                outlineObject.transform.localPosition = Vector3.zero;
+                outlineObject.transform.localRotation = Quaternion.identity;
+                outlineObject.transform.localScale = Vector3.one;
+            }
+            if (Input.GetKeyDown(KeyCode.E) || Input.GetKeyDown(KeyCode.Return))
+            {
+                if (_heldObject == null)
                 {
-                    if(hit.collider.CompareTag("PuzzlePiece"))
-                        PickUpObject(hit.transform.gameObject);
+                    PickUpObject(closestObject.gameObject);
+                    pickedUpThisFrame = true;
+                    highlightedObject = null;
+                    outlineObject.mesh = null;
                 }
             }
-            else
+        }
+        else
+        {
+            highlightedObject = null;
+            outlineObject.mesh = null;
+        }
+
+        if (Input.GetKeyDown(KeyCode.E) || Input.GetKeyDown(KeyCode.Return))
+        {
+            if (_heldObject != null && !pickedUpThisFrame)
             {
                 DropObject();
+                highlightedObject = null;
+                outlineObject.mesh = null;
             }
         }
 
@@ -34,6 +59,31 @@ public class PickupController : MonoBehaviour
         {
             MoveObject();
         }
+    }
+
+    Collider FindClosestPickupableCollider()
+    {
+        Debug.DrawLine(pickupCollider.transform.position + Vector3.down, pickupCollider.transform.position + Vector3.up);
+        var colliders = Physics.OverlapCapsule(pickupCollider.transform.position + Vector3.down, pickupCollider.transform.position + Vector3.up, pickupCollider.radius);
+        Vector3 targetPosition = pickupCollider.center; // the position you want to find the closest collider to
+
+        Collider closestCollider = null;
+        float closestDistance = Mathf.Infinity;
+
+        foreach (Collider collider in colliders)
+        {
+            if (!collider.CompareTag("PuzzlePiece"))
+                continue;
+
+            float distance = Vector3.Distance(collider.transform.position, targetPosition);
+            if (distance < closestDistance)
+            {
+                closestCollider = collider;
+                closestDistance = distance;
+            }
+        }
+
+        return closestCollider;
     }
 
     RigidbodyConstraints previousConstraints;
@@ -54,7 +104,9 @@ public class PickupController : MonoBehaviour
 
             _heldObject.transform.rotation = transform.rotation;
 
-            _heldObject.GetComponent<AudioSource>().Play();
+            var source = _heldObject.GetComponent<AudioSource>();
+            if(source)
+                source.Play();
         }
     }
 

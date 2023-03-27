@@ -21,7 +21,7 @@ public class KinematicIfIdle : MonoBehaviour
 
             if(timer > timeUntilKinematic)
             {
-                rb.isKinematic = true;
+                //rb.isKinematic = true; // TODO: softlock
             }
         }
         else
