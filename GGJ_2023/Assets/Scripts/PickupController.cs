@@ -16,7 +16,8 @@ public class PickupController : MonoBehaviour
 
     private void Start()
     {
-        pickupSFXParticle.Stop();
+        if(pickupSFXParticle)
+            pickupSFXParticle.Stop();
     }
 
     private void Update()
