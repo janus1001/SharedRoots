@@ -13,15 +13,20 @@ MonoBehaviour:
   m_Name: 11. Coda
   m_EditorClassIdentifier: 
   dialogueEntries:
-  - text: Margana and the old woman walk home through the forest.
+  - text: Margana and Ivy walk home together through the forest.
     characterName: 
     characterImage: {fileID: 21300000, guid: b498cad09f0044a47933e7b036841863, type: 3}
     narrator: 1
-  - text: There will be more puzzles for them - and you - to solve tomorrow.
+  - text: Shadows lengthen among the trees beneath the setting sun.
     characterName: 
     characterImage: {fileID: 21300000, guid: b498cad09f0044a47933e7b036841863, type: 3}
     narrator: 1
-  - text: END OF GAME
+  - text: 'There will be be more problems for them - and you - to solve tomorrow. '
+    characterName: 
+    characterImage: {fileID: 21300000, guid: b498cad09f0044a47933e7b036841863, type: 3}
+    narrator: 1
+  - text: But now, it is time for them time to rest and dream. For without dreams,
+      problems are not worth solving. And without rest, they are impossible to solve.
     characterName: 
     characterImage: {fileID: 21300000, guid: b498cad09f0044a47933e7b036841863, type: 3}
     narrator: 1

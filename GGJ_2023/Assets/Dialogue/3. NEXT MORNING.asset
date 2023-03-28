@@ -17,19 +17,34 @@ MonoBehaviour:
     characterName: 
     characterImage: {fileID: 21300000, guid: b498cad09f0044a47933e7b036841863, type: 3}
     narrator: 1
-  - text: Hello, what are you doing here?
+  - text: Well, hello there... I don't think we've met.
     characterName: 
     characterImage: {fileID: 21300000, guid: 61045215a35635447b9cda80ed0a28c4, type: 3}
     narrator: 0
-  - text: I've no home and no money, so I had to sleep in the forest.
+  - text: My name is Margana - I'm new here.
     characterName: 
     characterImage: {fileID: 21300000, guid: 83a30d2d7ffe2214481923f31cd650ab, type: 3}
     narrator: 0
-  - text: Hm. Follow me!
+  - text: 'My name is Ivy, like the plant that covers these trees. I grew up here,
+      and I''ve grown old here. '
     characterName: 
     characterImage: {fileID: 21300000, guid: 61045215a35635447b9cda80ed0a28c4, type: 3}
     narrator: 0
-  - text: SHE LEADS MARGANA THROUGH THE FOREST TO AN ANCIENT STONE CIRCLE.
+  - text: But why are you here, so cold and alone?
+    characterName: 
+    characterImage: {fileID: 21300000, guid: 61045215a35635447b9cda80ed0a28c4, type: 3}
+    narrator: 0
+  - text: I've no home, no money and nowhere to go. So I had to sleep in the forest.
+    characterName: 
+    characterImage: {fileID: 21300000, guid: 83a30d2d7ffe2214481923f31cd650ab, type: 3}
+    narrator: 0
+  - text: When I feel lost, there's a place that I go to seek guidance. I will take
+      you there.
+    characterName: 
+    characterImage: {fileID: 21300000, guid: 61045215a35635447b9cda80ed0a28c4, type: 3}
+    narrator: 0
+  - text: MARGANA FOLLOWS IVY THROUGH THE FOREST TO A RING OF STONES, GREY WITH AGE
+      AND BEARDED WITH LICHEN.
     characterName: 
     characterImage: {fileID: 21300000, guid: b498cad09f0044a47933e7b036841863, type: 3}
     narrator: 1

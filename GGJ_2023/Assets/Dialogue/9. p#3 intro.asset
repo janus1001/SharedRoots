@@ -17,12 +17,16 @@ MonoBehaviour:
     characterName: 
     characterImage: {fileID: 21300000, guid: 61045215a35635447b9cda80ed0a28c4, type: 3}
     narrator: 0
-  - text: 'I have somewhere to live and am learning my trade. But I still have no
-      money to live.... '
+  - text: I have somewhere to live and I'm learning my trade, but still I have no
+      money.
     characterName: 
     characterImage: {fileID: 21300000, guid: 83a30d2d7ffe2214481923f31cd650ab, type: 3}
     narrator: 0
-  - text: Shine your light to illuminate the circle.
+  - text: It seems everything here has a price. Without money, life is impossible.
+    characterName: 
+    characterImage: {fileID: 21300000, guid: 83a30d2d7ffe2214481923f31cd650ab, type: 3}
+    narrator: 0
+  - text: In times of darkness, we must find the light within.
     characterName: 
     characterImage: {fileID: 21300000, guid: 61045215a35635447b9cda80ed0a28c4, type: 3}
     narrator: 0
