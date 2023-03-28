@@ -8,6 +8,10 @@ public class CameraRotate : MonoBehaviour
     public float distance = 25f;  // The distance from the target
     public float angle = 0f;  // The starting angle
 
+    private void Start()
+    {
+        angle += 180;
+    }
     private void Update()
     {
         // Calculate the position based on the angle and distance

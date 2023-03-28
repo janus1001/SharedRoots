@@ -9,8 +9,18 @@ public class MainMenu : MonoBehaviour
     {
         if (SceneManager.GetActiveScene().name == "IntroScene")
         {
+            StartCoroutine(SeeSoundWarning());
+        }
+        if (SceneManager.GetActiveScene().name == "SoundInformation")
+        {
             StartCoroutine(StartGame());
         }
+    }
+
+    private IEnumerator SeeSoundWarning()
+    {
+        yield return new WaitForSeconds(5);
+        SceneManager.LoadScene("SoundInformation");
     }
 
     private IEnumerator StartGame()
@@ -18,6 +28,7 @@ public class MainMenu : MonoBehaviour
         yield return new WaitForSeconds(5);
         SceneManager.LoadScene("GoAroundCircles");
     }
+
     public void PlayButton()
     {
         SceneManager.LoadScene("IntroScene");
