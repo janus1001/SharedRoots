@@ -12,6 +12,9 @@ public class LazerScript : MonoBehaviour
     public bool alwaysOn;
     public float timeSinceLastPower;
 
+    public string myTag = "";
+    public string tagHitBy = "";
+
     private void Update()
     {
         if (timeSinceLastPower < 0.1f || alwaysOn)
@@ -30,6 +33,7 @@ public class LazerScript : MonoBehaviour
                     if (lazerScript)
                     {
                         lazerScript.timeSinceLastPower = 0;
+                        lazerScript.tagHitBy = myTag;
                     }
 
                     // Enable the line renderer

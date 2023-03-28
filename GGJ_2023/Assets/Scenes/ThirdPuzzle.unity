@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.15793878, g: 0.10562346, b: 0.20079139, a: 1}
+  m_IndirectSpecularColor: {r: 0.15788615, g: 0.10560491, b: 0.20075914, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2098,6 +2098,8 @@ MonoBehaviour:
   castDirection: 0
   alwaysOn: 0
   timeSinceLastPower: 1
+  myTag: reflector_2
+  tagHitBy: 
 --- !u!120 &258991650
 LineRenderer:
   m_ObjectHideFlags: 0
@@ -5208,6 +5210,8 @@ MonoBehaviour:
   castDirection: 0
   alwaysOn: 0
   timeSinceLastPower: 1
+  myTag: gem_red
+  tagHitBy: 
 --- !u!135 &611336658
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -5746,7 +5750,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &670251933
 Transform:
   m_ObjectHideFlags: 0
@@ -7297,11 +7301,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 100000, guid: 6bd1688c4b7d0499586a92ae1b8d925a, type: 3}
       propertyPath: m_Name
-      value: gem_17 (1)
+      value: gem_main_beam
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 6bd1688c4b7d0499586a92ae1b8d925a, type: 3}
       propertyPath: m_Layer
-      value: 0
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 6bd1688c4b7d0499586a92ae1b8d925a, type: 3}
       propertyPath: m_RootOrder
@@ -8020,19 +8024,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 6bd1688c4b7d0499586a92ae1b8d925a, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1.3333333
+      value: 1.3333336
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 6bd1688c4b7d0499586a92ae1b8d925a, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1.3333334
+      value: 1.3333337
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 6bd1688c4b7d0499586a92ae1b8d925a, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1.3333333
+      value: 1.3333336
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 6bd1688c4b7d0499586a92ae1b8d925a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.6745744
+      value: -0.67457294
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 6bd1688c4b7d0499586a92ae1b8d925a, type: 3}
       propertyPath: m_LocalPosition.y
@@ -8040,15 +8044,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 6bd1688c4b7d0499586a92ae1b8d925a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.4001752
+      value: -0.4001724
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 6bd1688c4b7d0499586a92ae1b8d925a, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.7071068
+      value: 0.70710677
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 6bd1688c4b7d0499586a92ae1b8d925a, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 6bd1688c4b7d0499586a92ae1b8d925a, type: 3}
       propertyPath: m_LocalRotation.y
@@ -8056,7 +8060,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 6bd1688c4b7d0499586a92ae1b8d925a, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 6bd1688c4b7d0499586a92ae1b8d925a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -8224,6 +8228,8 @@ MonoBehaviour:
   castDirection: 0
   alwaysOn: 0
   timeSinceLastPower: 1
+  myTag: reflector_1
+  tagHitBy: 
 --- !u!1001 &921891982
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9671,6 +9677,8 @@ MonoBehaviour:
   castDirection: 0
   alwaysOn: 1
   timeSinceLastPower: 1
+  myTag: main_lazer
+  tagHitBy: 
 --- !u!120 &1091334559
 LineRenderer:
   m_ObjectHideFlags: 0
@@ -12067,7 +12075,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1367522374
 Transform:
   m_ObjectHideFlags: 0
@@ -12389,6 +12397,8 @@ MonoBehaviour:
   castDirection: 0
   alwaysOn: 0
   timeSinceLastPower: 1
+  myTag: gem_blue
+  tagHitBy: 
 --- !u!135 &1415357177
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -12416,6 +12426,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thisLazer: {fileID: 1415357173}
   secondLazer: {fileID: 611336654}
+  tagReflector_1: reflector_1
+  tagReflector_2: reflector_2
   endDialogue: {fileID: 11400000, guid: a1a08779e400b544ba91724bf0906847, type: 2}
   correctSound: {fileID: 1415357179}
 --- !u!82 &1415357179
