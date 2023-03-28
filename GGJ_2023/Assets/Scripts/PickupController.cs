@@ -14,6 +14,8 @@ public class PickupController : MonoBehaviour
     GameObject highlightedObject;
     [SerializeField] ParticleSystem pickupSFXParticle;
 
+    public float timeSinceHoldingObject;
+
     private void Start()
     {
         if(pickupSFXParticle)
@@ -65,6 +67,12 @@ public class PickupController : MonoBehaviour
         if (_heldObject != null)
         {
             MoveObject();
+        }
+
+        timeSinceHoldingObject += Time.deltaTime;
+        if (_heldObject)
+        {
+            timeSinceHoldingObject = 0;
         }
     }
 
@@ -137,7 +145,6 @@ public class PickupController : MonoBehaviour
         _heldObject.GetComponent<Collider>().enabled = true;
         _heldObjRB.transform.parent = null;
         _heldObject = null;
-
 
         // Stop ParticleSystem if exists
         if (pickupSFXParticle != null)

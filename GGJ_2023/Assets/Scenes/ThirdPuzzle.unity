@@ -12470,6 +12470,10 @@ MonoBehaviour:
   tagReflector_2: reflector_2
   endDialogue: {fileID: 11400000, guid: a1a08779e400b544ba91724bf0906847, type: 2}
   correctSound: {fileID: 1415357179}
+  playersPickup: {fileID: 7498559381641424098}
+  rigidbodies:
+  - {fileID: 510618481}
+  - {fileID: 810727621}
 --- !u!82 &1415357179
 AudioSource:
   m_ObjectHideFlags: 0
@@ -23221,3 +23225,15 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 6308761618907628191}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &7498559381641424098 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4583825781833297533, guid: fae786e0b2c8ebf408490a8606c68f66,
+    type: 3}
+  m_PrefabInstance: {fileID: 6308761618907628191}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae4af42cccb5d78489c0fd157ba50f0b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
