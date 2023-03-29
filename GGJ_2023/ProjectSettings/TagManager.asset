@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - PuzzlePiece
+  - Cube1
+  - CeilingSphere
   layers:
   - Default
   - TransparentFX
