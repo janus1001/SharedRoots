@@ -1,4 +1,5 @@
 using PathCreation;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -24,10 +25,10 @@ public class CameraPathFollower : MonoBehaviour {
     public GameObject finalFocus;
     public GameObject ceiliingSphere;
 
-    public Renderer finalFocusRen;
-    public Material finalFocusMat;
+    public Renderer finalFocusRenderer;
+    public Material finalFocusMaterial;
+    public Color colour;
 
-    int state = 0;
     public float speed = 3;
     public float slowMotionSpeed = 0.75f;
     public float normalSpeed = 10.0f;
@@ -47,9 +48,6 @@ public class CameraPathFollower : MonoBehaviour {
     public bool bSlowMotion = false;
     public bool bFinalFocus = false;
 
-    public bool bSetAlpha = false;
-    public float alphaAnimTime = 0;
-
     [SerializeField] CamState cameraState;
 
     public GameObject signLookAtCenter;
@@ -61,13 +59,12 @@ public class CameraPathFollower : MonoBehaviour {
             //signLookAtCenter = woodenSigns[0].getChi
         }
 
-        finalFocusRen = GameObject.Find("inner-ring").GetComponent<Renderer>();
+        finalFocusRenderer = GameObject.Find("inner-ring").GetComponent<Renderer>();
         List<Material> materials = new List<Material>();
-        finalFocusRen.GetMaterials(materials);
-        finalFocusMat = materials[0];
+        finalFocusRenderer.GetMaterials(materials);
+        finalFocusMaterial = materials[0];
+        colour = finalFocusMaterial.color;
         cameraState = CamState.FreeFlow;
-
-        Debug.Log("sdfkjlasdgslfjghslekjghsk;egf");
     }
 
     void Update() {
@@ -125,9 +122,6 @@ public class CameraPathFollower : MonoBehaviour {
                 lookAhead();
             }
 
-            if (bSetAlpha) {
-                doAlphaAnimation();
-            }
         }
 
 
@@ -151,38 +145,29 @@ public class CameraPathFollower : MonoBehaviour {
 
     void lookAtFinalPoint() {
         transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(finalFocus.transform.position - transform.position), Time.deltaTime / desiredDuration * 5);
-        if (Vector2.Distance(transform.position, ceiliingSphere.transform.position) <= 1.0f) {
-            Invoke("showLogo", 3);
-        }
+        //if (Vector2.Distance(transform.position, ceiliingSphere.transform.position) <= 1.0f) {
+        //    Invoke("showLogo", 3);
+        //}
     }
 
     void showLogo() {
-        SetAlpha(1.0f);
-      //  bSetAlpha = true;
-       // alphaAnimTime = 0;
     }
 
-    void doAlphaAnimation() {
-        alphaAnimTime += Time.deltaTime;
-        Color color = finalFocusMat.color;
-        color.a = Mathf.Clamp(Mathf.Lerp(0, 1, alphaAnimTime), 0, 1);
-        finalFocusMat.color = color;
-        
-    }
+    IEnumerator doAlphaAnimation() {
+        Debug.Log("doAlphaAnimation");
 
-    void SetAlpha(float alpha) {
-        // Here you assign a color to the referenced material,
-        // changing the color of your renderer
-        Color color = finalFocusMat.color;
-        color.a = Mathf.Clamp(alpha, 0, 1);
-        finalFocusMat.color = color;
+        while (colour.a < 1.0f) {
+            colour.a += 0.02f;
+            finalFocusMaterial.color = colour;
+            yield return new WaitForSeconds(0.01f);
+        }
     }
 
     private void OnCollisionEnter(Collision collision) {
-        Debug.Log("------------ OnCollisionEnter ----------------------");
-        if (collision.gameObject.tag.Equals("CeilingSphere")) {
+        Debug.Log(collision.gameObject.name + " ---------=-=-=-=-=-=-=-=-=-=-=-");
+        if (collision.gameObject.name.Equals("FinalFocusPoint")) {
             Debug.Log("------------- collided  -----------------------");
-            SetAlpha(1);
+            StartCoroutine("doAlphaAnimation");
         }
     }
 }
